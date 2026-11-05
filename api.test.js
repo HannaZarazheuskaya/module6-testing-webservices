@@ -2,12 +2,12 @@ import assert from 'node:assert/strict';
 import baseUrl from './config.js';
 import { credentials, createBooking, updateBooking } from './test-data.js';
 
-describe('Manage booking', () => {
+describe('Manage booking using specific token', () => {
 
     let token;
     let bookingId;
     
-    before('Create token', async() => {
+    before('should create token', async() => {
         const response = await fetch(`${baseUrl}/auth`, {
             method: 'POST',
             headers: {
