@@ -4,7 +4,7 @@ import { credentials, createBooking, updateBooking } from './test-data.js';
 
 describe('Manage booking', () => {
 
-    let token; //29a95e5ccd67477
+    let token;
     let bookingId;
     
     before('Create token', async() => {
@@ -39,7 +39,7 @@ describe('Manage booking', () => {
         assert.strictEqual(receivedData.booking.firstname, createBooking.firstname, 'First Name does not match');
         assert.strictEqual(receivedData.booking.lastname, createBooking.lastname, 'Last Name does not match');
         
-        bookingId = receivedData.bookingid; //3992
+        bookingId = receivedData.bookingid;
         console.log(`Booking id is ${bookingId}`);
     });
 
