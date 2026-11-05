@@ -4,27 +4,30 @@
 ## Task Description
 
 ### Task
+```text
 1. Familiarize with restful-booker API - https://restful-booker.herokuapp.com/apidoc/index.html
 2. Implement at least 4 test scenarios using one of JS native fetch (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) 
 For debugging please use Postman.
 e.g.
-Create a token and reuse it in the next API calls
-Create a booking
-Get created booking by id
-Update booking
-Remove booking
-
+- Create a token and reuse it in the next API calls
+- Create a booking
+- Get created booking by id
+- Update booking
+- Remove booking
 3. Add assertions for headers, status code and body of response
 4. Add script into package.json to run API tests through the CLI
 5. Push API tests to the remote repository and create a Merge Request
+```
+
 
 ### Evaluation criteria (pass rate is 70%)
+```text
 Here’s the list of actions which result in reduction of overall mark for a completed task:
 1. Less than 3 tests implemented (-20%)
 2. Not all mentioned assertions were used (-10%)
 3. Script to run API test through the CLI was not added (-10%)
 4. Small mistakes in code (-10%)
-
+```
 
 ## Test scenarios
 CRUD test scenarios were implemented (Create, Read, Update, Delete) in a single test suite.
