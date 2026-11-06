@@ -16,7 +16,12 @@ describe('Manage booking using specific token', () => {
             body: JSON.stringify(credentials)
         });
 
-        token = (await response.json()).token;
+        assert.strictEqual(response.status, 200);
+
+        const receivedData = await response.json();
+        assert.ok(receivedData.token, 'No token returned from auth endpoint');
+        
+        token = receivedData.token;
     });
 
 
